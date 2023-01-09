@@ -16,7 +16,7 @@ jobs:
       - name: Create release
         uses: actions/github-script@v6.3.3
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             try {
               await github.rest.repos.createRelease({
